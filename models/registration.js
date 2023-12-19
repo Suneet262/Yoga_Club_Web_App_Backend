@@ -8,7 +8,7 @@ const registrationSchema = new mongoose.Schema({
   batchTime: { type: String, required: true },
   userId: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
 });
-
+ 
 const Registration = mongoose.model('Registration', registrationSchema);
 
 module.exports = Registration;
